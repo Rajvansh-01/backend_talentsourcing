@@ -32,7 +32,7 @@ class personalInfoController{
                         })
                     }
                 } catch (error) {
-                    res.status(400).json({status: "failed", message: "Couldn't add the User Info!"});
+                    res.status(400).json({status: "failed", message: "Couldn't add the User Info!", error: {error}});
                 }
             }
             else{
